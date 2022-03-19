@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 17 14:45:37 2022
+# Process ID: 11496
+# Current directory: C:/Users/32852/Desktop/FPGA/mypro/OV7670_Image_pro/OV7670_VGA_BRAM.runs/impl_2
+# Command line: vivado.exe -log OV7670_Image_pro_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source OV7670_Image_pro_Top.tcl -notrace
+# Log file: C:/Users/32852/Desktop/FPGA/mypro/OV7670_Image_pro/OV7670_VGA_BRAM.runs/impl_2/OV7670_Image_pro_Top.vdi
+# Journal file: C:/Users/32852/Desktop/FPGA/mypro/OV7670_Image_pro/OV7670_VGA_BRAM.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source OV7670_Image_pro_Top.tcl -notrace

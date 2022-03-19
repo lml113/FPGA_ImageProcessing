@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 17 13:59:18 2022
+# Process ID: 15316
+# Current directory: C:/Users/32852/Desktop/FPGA/mypro/OV7670_Image_pro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12100 C:\Users\32852\Desktop\FPGA\mypro\OV7670_Image_pro\OV7670_VGA_BRAM.xpr
+# Log file: C:/Users/32852/Desktop/FPGA/mypro/OV7670_Image_pro/vivado.log
+# Journal file: C:/Users/32852/Desktop/FPGA/mypro/OV7670_Image_pro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/32852/Desktop/FPGA/mypro/OV7670_Image_pro/OV7670_VGA_BRAM.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_2' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 718.156 ; gain = 104.676
+launch_runs synth_2 -jobs 4
+[Thu Mar 17 14:00:41 2022] Launched synth_2...
+Run output will be captured here: C:/Users/32852/Desktop/FPGA/mypro/OV7670_Image_pro/OV7670_VGA_BRAM.runs/synth_2/runme.log
+reset_run synth_2
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 17 14:01:37 2022...

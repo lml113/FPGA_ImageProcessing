@@ -1,0 +1,84 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Mar 17 15:43:16 2022
+| Host         : LAPTOP-L56MQ14S running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file OV7670_Image_pro_Top_control_sets_placed.rpt
+| Design       : OV7670_Image_pro_Top
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    51 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      3 |            1 |
+|      4 |            1 |
+|      6 |            1 |
+|     11 |            1 |
+|     13 |            1 |
+|     14 |            1 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              74 |           43 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              14 |            4 |
+| Yes          | No                    | No                     |              94 |           33 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              23 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+-------------------------------------------+------------------------------------------------------+------------------+----------------+
+|    Clock Signal    |               Enable Signal               |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++--------------------+-------------------------------------------+------------------------------------------------------+------------------+----------------+
+|  pclk_IBUF_BUFG    |                                           |                                                      |                1 |              2 |
+|  dig_seg_u/divclk  |                                           |                                                      |                3 |              3 |
+|  pclk_IBUF_BUFG    | u_ov7670_capture/address[16]_i_1_n_0      | vsync_IBUF                                           |                1 |              4 |
+|  sys_clk_IBUF_BUFG | u_ov7670_init/u_I2C_Controller/SD_COUNTER | u_ov7670_init/u_I2C_Controller/SD_COUNTER[5]_i_1_n_0 |                2 |              6 |
+|  sys_clk_IBUF_BUFG | uu_1/y_counter                            |                                                      |                5 |             11 |
+|  pclk_IBUF_BUFG    | u_ov7670_capture/p_0_in[1]                | u_ov7670_capture/address[15]_i_1_n_0                 |                5 |             13 |
+|  sys_clk_IBUF_BUFG |                                           | dig_seg_u/divclk_0                                   |                4 |             14 |
+|  pclk_IBUF_BUFG    | u_ov7670_capture/dout[15]_i_1_n_0         |                                                      |                5 |             16 |
+|  sys_clk_IBUF_BUFG | u_ov7670_init/LUT_INDEX_rep[7]_i_1_n_0    |                                                      |                5 |             16 |
+|  pclk_IBUF_BUFG    | u_ov7670_capture/d_latch[15]_i_1_n_0      |                                                      |                7 |             17 |
+| ~sys_clk_IBUF_BUFG | uu_1/E[0]                                 |                                                      |                5 |             17 |
+| ~sys_clk_IBUF_BUFG | uu_1/uu_3_i_34_0[0]                       |                                                      |                6 |             17 |
+|  sys_clk_IBUF_BUFG |                                           |                                                      |               39 |             69 |
++--------------------+-------------------------------------------+------------------------------------------------------+------------------+----------------+
+
+
